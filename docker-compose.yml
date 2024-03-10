@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  db:
+    image: postgres
+    container_name: db_app
+    environment:
+        POSTGRES_USER: postgres
+        POSTGRES_PASSWORD: gimeori
+        POSTGRES_DB: postgres
+    
+    ports:
+    - 5437:5432
+    expose:
+      - 5437
+    restart: always
+    
+  app: 
+    build: ./
+    environment:
+      - DATABASE_URL=postgresql://postgres:gimeori@db_app:5432/couriers_service
+    container_name: test_courier
+    ports:
+      - 7773:8000
+    depends_on:
+      - db
+    restart: always
