@@ -23,9 +23,13 @@
 |POST  |/order/{id}   |Завершение заказа                             |
 |GET   | /docs/       |Документация API                              | 
 
-| Left-Aligned  | Center Aligned  | Right Aligned |
-|:------------- |:---------------:| -------------:|
-| POST          | Cell 2          | Cell 3        |
-| Row 2         | Cell 5          | Cell 6        |
-| Row 3         | Cell 8          | Cell 9        |
+| Left-Aligned  | Center Aligned    | Right Aligned |
+|:------------- |:-----------------:| -------------:|
+| POST          | /courier          | Cell 3        |
+| GET           | /couriers         | Cell 6        |
+| GET           | /courier/{id}     | Cell 9        |
+| POST          | /order            | Cell 3        |
+| GET           | /order/{id}       | Cell 6        |
+| POST          | /order/{id}       | Cell 9        |
+
 
