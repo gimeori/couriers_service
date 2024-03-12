@@ -23,13 +23,14 @@
 |POST  |/order/{id}   |Завершение заказа                             |
 |GET   | /docs/       |Документация API                              | 
 
-| Left-Aligned  | Center Aligned    | Right Aligned |
-|:------------- |:-----------------:| -------------:|
-| POST          | /courier          | Cell 3        |
-| GET           | /couriers         | Cell 6        |
-| GET           | /courier/{id}     | Cell 9        |
-| POST          | /order            | Cell 3        |
-| GET           | /order/{id}       | Cell 6        |
-| POST          | /order/{id}       | Cell 9        |
+| Left-Aligned  | Center Aligned    | Right Aligned                                   |
+|:------------- |:-----------------:| -----------------------------------------------:|
+| POST          | /courier          | Регистрация курьера в системе                   |
+| GET           | /couriers         | Получение списка всех курьеров                  |
+| GET           | /courier/{id}     | Получение подробной информации о курьере по id  |
+| POST          | /order            | Публикация заказа в системе                     |
+| GET           | /order/{id}       | Получение информации о заказе                   |
+| POST          | /order/{id}       | Завершение заказа                               |
+| GET           | /docs             | Документация API                                |
 
 
