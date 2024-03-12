@@ -5,7 +5,7 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 
 
 
-engine_test = create_engine('postgresql://postgres:gimeori@localhost/postgres')
+engine_test = create_engine('postgresql://postgres:1234@localhost/postgres')
 session_test = sessionmaker(autocommit=False, autoflush=False, bind=engine_test)
 Base = declarative_base()
 

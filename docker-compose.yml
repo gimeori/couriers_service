@@ -3,20 +3,19 @@ services:
   db:
     image: postgres
     container_name: db_app
-    environment:
-        POSTGRES_USER: postgres
-        POSTGRES_PASSWORD: gimeori
-        POSTGRES_DB: postgres
+    command: -p 1221
+    expose:
+      - 1221
+    env_file:
+      - .env-non-dev
     
-    ports:
-    - 5432:5432
     
     restart: always
     
   app: 
     build: ./
-    environment:
-      - DATABASE_URL=postgresql://postgres:gimeori@db_app:5432/couriers_service
+    env_file:
+      - .env-non-dev
     container_name: test_courier
     ports:
       - 7773:8000
