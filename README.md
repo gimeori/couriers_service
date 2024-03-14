@@ -1,16 +1,9 @@
 Задание на практику от Estesis.tech
 
-1. Создайте в PostgreSQL базу данных couriers_service
-2. Введите свои данные для авторизации базы данных postgres в файле .env
-3. Введите в терминале
+Приложение развернуто с помощью сервиса render.com
 ```
-    python init_db.py
+https://couriers-service.onrender.com/docs
 ```
-4. Запустите сервер FastAPI с помощью команды:
-```
-    uvicorn main:app --reload
-```
-
 
 <h1>Описание эндпоинтов</h1>
 
