@@ -1,8 +1,9 @@
-from database import Base
+
 from sqlalchemy import Column,Integer,String,ForeignKey, DateTime
-from sqlalchemy.orm import relationship
+from sqlalchemy.orm import relationship, declarative_base
 from sqlalchemy.sql import func
 
+Base=declarative_base()
 class Courier(Base):
     __tablename__ = "couriers"
 

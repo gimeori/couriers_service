@@ -7,8 +7,8 @@ client = TestClient(app)
 
 def test_create_courier():
     courier_data = {
-        "name": "semenov",
-        "districts": ["center", "industrial"]
+        "name": "petrov",
+        "districts": ["october"]
     }
     response = client.post("/couriers/courier", json=courier_data)
     assert response.status_code == 201

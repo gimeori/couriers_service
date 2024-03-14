@@ -43,7 +43,7 @@ def test_complete_nonexistent_order():
 
 def test_complete_already_completed_order():
     #если существующий заказ уже завершен
-    response = client.post("/orders/order/2")
+    response = client.post("/orders/order/1")
     assert response.status_code == 201
     assert response.json()["message"] == "Order completed"
 
